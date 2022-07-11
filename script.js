@@ -103,7 +103,7 @@ taskInput.addEventListener("keyup", e => {
         localStorage.setItem("todo-list", JSON.stringify(todos))
         showTodo(document.querySelector("span.active").id)
     }
-});
+})
 
 function generateRandomTask() {
     let randomTasks = [
@@ -146,7 +146,8 @@ function generateRandomTask() {
         !checkTask.length ? clearAll.classList.remove("active") : clearAll.classList.add("active")
         taskBox.offsetHeight >= 300 ? taskBox.classList.add("overflow") : taskBox.classList.remove("overflow")
     }
+
     todos.push(task)
-    showTodo("all")
+    showTodo('all')
 
 }
